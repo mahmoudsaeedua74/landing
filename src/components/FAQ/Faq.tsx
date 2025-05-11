@@ -39,7 +39,7 @@ export default function FAQ() {
         <div className="flex flex-col lg:flex-row mt-12 gap-8">
           <motion.div
             className=" w-full lg:w-1/2 "
-            initial={{ opacity: 0, x: locale === "ar" ? -200 : 200 }}
+            initial={{ opacity: 0, x: locale === "ar" ? 200 : -200 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: false, amount: 0.3 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
@@ -48,7 +48,7 @@ export default function FAQ() {
           </motion.div>
           <motion.div
             className="w-full lg:w-1/2"
-            initial={{ opacity: 0, x: locale === "ar" ? 200 : -200 }}
+            initial={{ opacity: 0, x: locale === "ar" ? -200 : 200 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: false, amount: 0.3 }}
             transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
