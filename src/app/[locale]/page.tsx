@@ -10,7 +10,7 @@ import OurService from "@/components/Service/OurService";
 
 export default function Home() {
   return (
-    <main className="overflow-hidden">
+    <main className=" ">
       <OurService />
       <OurExperience />
       <ChoseUs />

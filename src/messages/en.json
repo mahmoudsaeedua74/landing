@@ -1,5 +1,87 @@
 {
-  "HomePage": {
-    "title": "Hello world!"
+  "common": {},
+  "title": {
+    "OurService": " Learn about our services",
+    "OurExperience": "Start your business whatever your sector",
+    "ChoseUs": "Why is ClickShare your ideal choice?",
+    "HowWeWork": "How Clickshare work",
+    "Testimonial": "Find out how our customers see us.",
+    "FAQ": " Frequently Asked Questions"
+  },
+  "Header": {
+    "home": "Home",
+    "services": "Services",
+    "howItWorks": "How it works?",
+    "blog": "Blog",
+    "faq": "FAQ",
+    "helpCenter": "Help Center",
+    "signIn": "Sign In"
+  },
+  "HeaderContent": {
+    "titleLine1": "We  your business to",
+    "titleLine2": "elevate ",
+    "titleLine3": "New Levels",
+    "description": "We elevate your business to new horizons by providing professional and innovative services including ",
+    "description2": " call center, creative design, SEO, e-commerce, social media management, and advertising campaign management.",
+    "button": "Start Now",
+    "weWorkIn": "We work in",
+    "forAlt": "  Business Development Services"
+  },
+  "OurService": {
+    "OurProduct": "Our Products",
+    "Storage": "Storage",
+    "Logistics": "Logistics",
+    "CustomerService": "Customer Service",
+    "MoneyTransfer": "Money Transfer",
+    "OurProductDescription": "Selected products designed to meet your needs and provide you with the best quality",
+    "StorageDescription": "We offer secure and organized storage systems to ensure product quality and easy access",
+    "LogisticsDescription": "We provide fast and reliable logistical solutions to ensure your products reach their destination on time",
+    "CustomerServiceDescription": "Comprehensive solutions to enhance your customers' trust and provide an exceptional experience",
+    "MoneyTransferDescription": "Secure and fast financial services to facilitate your business transactions",
+    "button": "Start Now"
+  },
+  "Categories": {
+    "FashionAndOperations": "Fashion & Operations",
+    "DigitalProducts": "Digital Products",
+    "HealthAndFitness": "Health & Fitness",
+    "Electronics": "Electronics",
+    "CareAndBeauty": "Care & Beauty"
+  },
+  "ChoseUs": {
+    "CreateAndLaunchStore": "Create and Launch Store",
+    "CreateAndLaunchSubtitle": "Your launch is easy, even when you're busy",
+    "CreateAndLaunchDescription1": "No previous experience or technical tools needed to start your business with our platform",
+    "CreateAndLaunchDescription2": "+1000 services from the merchant center to support all your needs",
+    "CreateAndLaunchDescription3": "Easy and fast steps to launch your store",
+    "CreateAndLaunchDescription4": "Share experiences with thousands of active merchants in our community",
+    "StoreDesign": "Store Design",
+    "StoreDesignSubtitle": "Your store, your style",
+    "StoreDesignDescription1": "Your business success needs a great appearance — choose a theme that fits your brand",
+    "StoreDesignDescription2": "A wide library of customizable ready-made themes",
+    "StoreDesignDescription3": "Full control over store design using CSS and HTML",
+    "StoreDesignDescription4": "Integration options with platforms like Twilight and Sala",
+    "Payments": "Payments",
+    "PaymentsSubtitle": "Secure payments for sustainable business and solid trust!",
+    "PaymentsDescription1": "Benefit from our integrated e-payment system to manage your store and customer payments",
+    "PaymentsDescription2": "Multiple payment methods that meet all your customers’ needs",
+    "PaymentsDescription3": "Quick payment reports with day-by-day tracking",
+    "PaymentsDescription4": "Payment transfers after 24 hours, high protection and full security for your customers",
+    "Shipping": "Shipping and Delivery",
+    "ShippingSubtitle": "A full delivery fleet at your service",
+    "ShippingDescription1": "Various shipping options connecting your store with the world",
+    "ShippingDescription2": "Easy integration with no contracts",
+    "ShippingDescription3": "Connect your store with over 100 local and international shipping companies",
+    "ShippingDescription4": "Logistics and shipping services for all product types",
+    "ShippingDescription5": "Local and international shipping covering cities, villages, and remote areas"
+  },
+  "HowWeWork": {
+    "HowWeWorkStep1Title": "Integration with Online Stores",
+    "HowWeWorkStep2Title": "Affiliate Shopping",
+    "HowWeWorkStep3Title": "Supply / Customs Clearance",
+    "HowWeWorkStep4Title": "Import / Customs Clearance",
+    "HowWeWorkStep5Title": "Shipping & Call Centers",
+    "HowWeWorkStep6Title": "Cash Collection",
+    "HowWeWorkStep7Title": "Digital Wallets",
+    "HowWeWorkStep8Title": "Integration with Online Stores"
   }
 }

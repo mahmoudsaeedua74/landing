@@ -3,7 +3,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import firstImage from "../../../public/assets/الاستراد.png";
 import secondImage from "../../../public/assets/التخزين.png";
 import thirdImage from "../../../public/assets/اللوجيستيات.png";
 import fourthImage from "../../../public/assets/تحويل الاموال.png";
@@ -12,49 +11,41 @@ import sixImage from "../../../public/assets/منتجاتنا.png";
 import Image from "next/image";
 import { Button } from "../ui/Button/Button";
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 
 const getService = [
   {
     id: 1,
     image: sixImage,
-    title: "منتجاتنا",
-    description: "منتجات مختارة مصممة لتناسب احتياجاتك وتقدم لك أفضل جودة",
+    title: "OurProduct",
+    description: "OurProductDescription",
   },
   {
     id: 2,
     image: secondImage,
-    title: "التخزين",
-    description:
-      "نوفر أنظمة تخزين آمنة ومنظمة تضمن الحفاظ على جودة المنتجات وسهولة الوصول إليها",
+    title: "Storage",
+    description: "StorageDescription",
   },
   {
     id: 3,
     image: thirdImage,
-    title: "اللوجيستيات",
-    description:
-      "نقــــدم حلول لوجستية سريعة وموثوقة لضمن وصول منتجاتك في الوقت المناسب",
-  },
-  {
-    id: 4,
-    image: firstImage,
-    title: "خدمة العملاء",
-    description: "حلول متكاملة لتعزيز ثقة عملائك وتقديم تجربة استثنائية",
+    title: "Logistics",
+    description: "LogisticsDescription",
   },
   {
     id: 5,
     image: fiveImage,
-    title: "خدمة العملاء",
-    description: "حلول متكاملة لتعزيز ثقة عملائك وتقديم تجربة استثنائية",
+    title: "CustomerService",
+    description: "CustomerServiceDescription",
   },
   {
     id: 6,
     image: fourthImage,
-    title: "تحويل الأموال",
-    description: "خدمات مالية آمنة وسريعة لتسهيل معاملاتك التجارية",
+    title: "MoneyTransfer",
+    description: "MoneyTransferDescription",
   },
 ];
 
-// Container animation
 const containerAnimation = {
   initial: { opacity: 0 },
   whileInView: { opacity: 1 },
@@ -62,7 +53,6 @@ const containerAnimation = {
   transition: { duration: 0.5, ease: "easeOut" },
 };
 
-// Staggered card animation variants
 const cardVariants = {
   hidden: { opacity: 0, y: 50 },
   visible: (i: number) => ({
@@ -77,6 +67,7 @@ const cardVariants = {
 };
 
 export default function CarouselImage() {
+  const t = useTranslations("OurService");
   return (
     <motion.div
       className="bg-gray-100 py-10 overflow-hidden"
@@ -128,12 +119,12 @@ export default function CarouselImage() {
 
               <div className="absolute inset-0 flex flex-col justify-center items-center p-6 text-white z-10">
                 <h3 className="text-3xl md:text-[46px] font-bold text-center mb-4">
-                  {item.title}
+                  {t(item.title)}
                 </h3>
 
-                <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col items-center">
-                  <p className="text-base md:text-[22px] text-center mb-6 max-w-[250px]">
-                    {item.description}
+                <div className=" flex flex-col items-center">
+                  <p className="text-base md:text-[22px] leading-normal text-center mb-6 max-w-[250px]">
+                    {t(item.description)}
                   </p>
                   <Button
                     variant="textMain"
@@ -142,9 +133,9 @@ export default function CarouselImage() {
                       index % 2 === 0
                         ? "bg-second-color hover:bg-second-color/90"
                         : "bg-main-color hover:bg-main-color/90"
-                    } text-white`}
+                    } text-white mt-20 `}
                   >
-                    ابدأ الآن
+                    {t("button")}
                   </Button>
                 </div>
               </div>

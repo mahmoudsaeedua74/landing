@@ -3,61 +3,63 @@ import React from "react";
 import { motion } from "framer-motion";
 import Heading from "../common/Heading";
 import { animation } from "@/utils/animation";
+import { useTranslations } from "next-intl";
 const stepsData = [
   {
     step: 1,
-    title: "الربط مع المتاجر الإلكترونية",
+    title: "HowWeWorkStep1Title",
     position: "top",
     color: "#48BEE4",
   },
   {
     step: 2,
-    title: "التسوق بالعمولة",
+    title: "HowWeWorkStep2Title",
     position: "bottom",
     color: "#3B98BC",
   },
   {
     step: 3,
-    title: "التوريد/ التخليص الجمركي",
+    title: "HowWeWorkStep3Title",
     position: "top",
     color: "#2E7BA2",
   },
   {
     step: 4,
-    title: "الاستيراد/التخليص الجمركي",
+    title: "HowWeWorkStep4Title",
     position: "bottom",
     color: "#256184",
   },
   {
     step: 5,
-    title: "الشحن ومراكز الاتصال",
+    title: "HowWeWorkStep5Title",
     position: "top",
     color: "#8A5A28",
   },
   {
     step: 6,
-    title: "تحصيل الكاشات",
+    title: "HowWeWorkStep6Title",
     position: "bottom",
     color: "#B77B34",
   },
   {
     step: 7,
-    title: "المحافظ الرقمية",
+    title: "HowWeWorkStep7Title",
     position: "top",
     color: "#E19A3D",
   },
   {
     step: 8,
-    title: "الربط مع المتاجر الإلكترونية",
+    title: "HowWeWorkStep8Title",
     position: "bottom",
     color: "#F9B03F",
   },
 ];
 
 export default function HowWeWork() {
+  const t = useTranslations("HowWeWork");
   return (
     <section className="py-20 space-y-28  container mx-auto px-4 overflow-hidden text-[#2E6D88] text-[20px]  font-bold">
-      <Heading title="كيف تعمل Clickshare" icon="fa" />
+      <Heading title="HowWeWork" icon="fa" />
       <div className=" relative flex gap-6 py-20">
         {stepsData.map((item) => (
           <motion.div
@@ -86,11 +88,11 @@ export default function HowWeWork() {
                   className="w-2 h-2 rounded-full"
                   style={{ backgroundColor: item.color }}
                 ></div>
-                <div className="mb-2"> {item.title} </div>
+                <div className="mb-2"> {t(item.title)} </div>
               </div>
             ) : (
               <div className="flex flex-col items-center absolute bottom-0 text-center">
-                <div className="mb-2"> {item.title} </div>
+                <div className="mb-2"> {t(item.title)} </div>
                 <div
                   className="w-2 h-2 rounded-full"
                   style={{ backgroundColor: item.color }}

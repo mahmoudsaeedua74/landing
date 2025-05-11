@@ -1,9 +1,9 @@
 "use client";
 import React from "react";
-import { FaQuestion } from "react-icons/fa";
-import { GoDotFill } from "react-icons/go";
+import { GoSquareFill } from "react-icons/go";
 import { FaExclamation } from "react-icons/fa";
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 const moveHeader = {
   initial: { opacity: 0, y: 80 },
   whileInView: { opacity: 1, y: 0 },
@@ -17,20 +17,16 @@ export default function Heading({
   title: string;
   icon: "fa" | "dot" | "mark";
 }) {
+  const t = useTranslations("title");
   const renderIcon = () => {
     switch (icon) {
       case "fa":
-        return (
-          <FaQuestion
-            className="inline-block ms-2 text-second-color   "
-            size={60}
-          />
-        );
+        return <span className="inline-block ms-2 text-second-color ">؟</span>;
       case "dot":
         return (
-          <GoDotFill
-            className="inline-block ms-2 text-second-color"
-            size={60}
+          <GoSquareFill
+            className="inline-block ms-2 mt-6 text-second-color "
+            size={20}
           />
         );
       case "mark":
@@ -47,10 +43,10 @@ export default function Heading({
 
   return (
     <motion.h2
-      className="text-center text-[4.5625rem] text-main-color"
+      className="text-center text-[1.5625rem]  sm:text-[2.5625rem] md:text-[3.5625rem] lg:text-[4.5625rem] text-main-color"
       {...moveHeader}
     >
-      {title}
+      {t(title)}
       {renderIcon()}
     </motion.h2>
   );

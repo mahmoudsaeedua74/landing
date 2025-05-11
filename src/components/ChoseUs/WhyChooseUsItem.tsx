@@ -3,6 +3,7 @@ import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { StaticImageData } from "next/image";
+import { useLocale, useTranslations } from "next-intl";
 
 interface WhyChooseUsItemProps {
   image: StaticImageData;
@@ -20,12 +21,24 @@ export default function WhyChooseUsItem({
   description,
   index,
 }: WhyChooseUsItemProps) {
+  const t = useTranslations("ChoseUs");
+  const locale = useLocale();
   return (
     <div
-      className={`flex  overflow-hidden f gap-8  items-center justify-center`}
+      className={`flex flex-col xl:flex-row overflow-hidden  gap-8  items-center justify-center`}
     >
       <MoveImage
-        initial={{ opacity: 0, x: index % 2 === 0 ? -200 : 200 }}
+        initial={{
+          opacity: 0,
+          x:
+            locale === "ar"
+              ? index % 2 === 0
+                ? -200
+                : 200
+              : index % 2 === 0
+              ? 200
+              : -200,
+        }}
         className={`relative rounded-lg  ${
           index % 2 === 0 ? "order-2" : "order-1"
         }`}
@@ -40,22 +53,36 @@ export default function WhyChooseUsItem({
       />
 
       <motion.div
-        className={`text-main-color ms-4 ${index % 2 === 0 ? "order-1" : "order-2"}`}
-        initial={{ opacity: 0, x: index % 2 === 0 ? 200 : -200 }}
+        className={`text-main-color ms-4 ${
+          index % 2 === 0 ? "xl:order-1" : "xl:order-2"
+        }`}
+        initial={{
+          opacity: 0,
+          x:
+            locale === "ar"
+              ? index % 2 === 0
+                ? 200
+                : -200
+              : index % 2 === 0
+              ? -200
+              : 200,
+        }}
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: false, amount: 0.3 }}
         transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
       >
         <div>
-          <h3 className="text-[50px] font-semibold mb-2">
+          <h3 className="font-semibold mb-2 text-[2.1250rem]   lg:text-[3.1250rem]">
             {index + 1}. {title}
           </h3>
-          <h4 className="text-[60px] font-bold mb-4 w-full">{subtitle}</h4>
+          <h4 className=" lg:text-[3.75rem]  text-[2.1250rem]  font-bold mb-4 w-full">
+            {subtitle}
+          </h4>
 
           <div className="space-y-3">
             {description.map((item, i) => (
-              <p key={i} className=" text-[33px]">
-                {item}
+              <p key={i} className="text-[1.3rem]  lg:text-[2.0625rem]">
+                {t(item)}
               </p>
             ))}
           </div>
@@ -64,3 +91,4 @@ export default function WhyChooseUsItem({
     </div>
   );
 }
+// text-center text-[1.5625rem]  sm:text-[2.5625rem] md:text-[3.5625rem] lg:text-[4.5625rem] text-main-color

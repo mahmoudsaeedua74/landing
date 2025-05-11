@@ -8,13 +8,13 @@ import { animation } from "@/utils/animation";
 export function TestimonialCard({ item }: TestimonialCardProps) {
   return (
     <motion.div
-      className="py-40 px-4 relative z-0"
+      className="py-8 sm:py-40 px-4 relative z-0"
       key={item.id}
       {...animation}
       custom={item.id}
     >
       <div
-        className="relative bg-[#FCB346] rounded-2xl py-8 px-8 md:px-12 transition-all duration-300 hover:scale-150 hover:shadow-2xl"
+        className="relative bg-[#FCB346] rounded-2xl py-8 px-8 md:px-12 transition-all duration-300 md:hover:scale-125 hover:shadow-2xl"
         dir="ltr"
       >
         <div className="flex items-center mb-4">

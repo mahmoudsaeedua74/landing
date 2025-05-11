@@ -4,7 +4,7 @@ import HeaderContent from "./HeaderContent";
 
 export default function Header() {
   return (
-    <header className="overflow-hidden">
+    <header >
       <Navbar />
       <HeaderContent/>
     </header>

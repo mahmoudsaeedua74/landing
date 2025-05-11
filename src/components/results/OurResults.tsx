@@ -4,7 +4,7 @@ import ResultNumber from "./ResultNumber";
 
 export default function OurResults() {
   return (
-    <section className="mt-20 contain">
+    <section className=" contain">
       <OurResultsitem />
       <ResultNumber />
     </section>

@@ -1,5 +1,89 @@
 {
-  "HomePage": {
-    "title": "مرحبا"
+  "title": {
+    "OurService": "تعرف علي خدماتنا الخدمات",
+    "OurExperience": "انطلق بتجارتك مهما كان قطاعك",
+    "ChoseUs": "لماذا تعد ClickShare هي خيارك المثالي؟",
+    "HowWeWork": "كيف تعمل Clickshare ",
+    "Testimonial": "تعرف كيف ينظر الينا عملاؤنا",
+    "FAQ": "الأسئلة الشائعة"
+  },
+  "Header": {
+    "home": "الصفحة الرئيسية",
+    "services": "الخدمات",
+    "howItWorks": "كيف نعمل ؟",
+    "blog": "المدونة",
+    "faq": "الأسئلة الشائعة",
+    "helpCenter": "مركز المساعدة",
+    "signIn": "تسجيل الدخول"
+  },
+  "HeaderContent": {
+    "titleLine1": " بأعمـــــــالك إلى",
+    "titleLine2": "نرتقي  ",
+    "titleLine3": "مستويات جديدة",
+    "description": "نرتقي بأعمالك إلى آفاق جديدة من خلال تقديم خدمات احترافية ومبتكرة تشمل ",
+    "description2": "مركز الاتصال، التصميم الإبداعي، تحسين محركات البحث، التجارة الإلكترونية، إدارة منصات التواصل الاجتماعي، وإدارة الحملات الإعلانية.",
+    "button": "ابدأ الآن",
+    "weWorkIn": "نعمل في",
+    "forAlt": "خدمات تطوير الأعمال"
+  },
+  "OurService": {
+    "OurProduct": "منتجاتنا",
+    "Storage": "التخزين",
+    "Logistics": "اللوجيستيات",
+    "CustomerService": "خدمة العملاء",
+    "MoneyTransfer": "تحويل الأموال",
+    "OurProductDescription": "منتجات مختارة مصممة لتناسب احتياجاتك وتقدم لك أفضل جودة",
+    "StorageDescription": "نوفر أنظمة تخزين آمنة ومنظمة تضمن الحفاظ على جودة المنتجات وسهولة الوصول إليها",
+    "LogisticsDescription": "نقــــدم حلول لوجستية سريعة وموثوقة لضمن وصول منتجاتك في الوقت المناسب",
+    "CustomerServiceDescription": "حلول متكاملة لتعزيز ثقة عملائك وتقديم تجربة استثنائية",
+    "MoneyTransferDescription": "خدمات مالية آمنة وسريعة لتسهيل معاملاتك التجارية",
+    "button": "ابدأ الآن"
+  },
+  "Categories": {
+    "FashionAndOperations": "عمليات و أزياء",
+    "DigitalProducts": "المنتجات الرقمية",
+    "HealthAndFitness": "صحة و اللياقة",
+    "Electronics": "الالكترونيات",
+    "CareAndBeauty": "العناية و الجمال"
+  },
+  "ChoseUs": {
+    "CreateAndLaunchStore": "إنشاء وتدشين المتجر",
+    "CreateAndLaunchSubtitle": "انطلاقتك سهلة حتى بانشغالك",
+    "CreateAndLaunchDescription1": "لا تحتاج لخبرة سابقة أو أدوات تقنية لبدأ تجارتك مع سوقنا",
+    "CreateAndLaunchDescription2": "+1000 خدمة من مركزي خدمات التاجر تشاركك كل ما تحتاجه",
+    "CreateAndLaunchDescription3": "خطوات سهلة وسريعة لإنشاء متجرك",
+    "CreateAndLaunchDescription4": "تبادل التجارب والخبرات مع آلاف التجار في مجتمع نشط",
+
+    "StoreDesign": "تصميم المتجر",
+    "StoreDesignSubtitle": "متجرك على ذوقك",
+    "StoreDesignDescription1": "نجاحك التجاري يحتاج لمظهر لائق، اختر مظهراً يناسب علامتك",
+    "StoreDesignDescription2": "مكتبة متنوعة من السمات الجاهزة القابلة للتخصيص حسب رغبتك",
+    "StoreDesignDescription3": "تحكم كامل بتصميم متجرك عن طريق CSS و HTML",
+    "StoreDesignDescription4": "خيارات تكامل مع مواقع أخرى مثل Twilight و Sala",
+
+    "Payments": "المدفوعات",
+    "PaymentsSubtitle": "مدفوعات آمنة، لتجارة مستدامة، وثقة متينة!",
+    "PaymentsDescription1": "استفد من نظام سلة المتكامل للمدفوعات الإلكترونية لإدارة مدفوعات متجرك وعملائك",
+    "PaymentsDescription2": "وسائل دفع متنوعة تلبي كافة احتياجات عملائك",
+    "PaymentsDescription3": "تقارير سريع لنظام المدفوعات تتابع يوم بيوم",
+    "PaymentsDescription4": "تحويل المدفوعات بعد 24 ساعة، حماية عالية وأمان لكافة عملائك",
+
+    "Shipping": "الشحن والتوصيل",
+    "ShippingSubtitle": "اسطول شحن متكامل في خدمة منتجاتك",
+    "ShippingDescription1": "خيارات شحن متنوعة تربط متجرك بالعالم",
+    "ShippingDescription2": "ربط سهل بدون عقود.",
+    "ShippingDescription3": "اربط متجرك بأكثر من 100 شركة شحن وتوصيل محليَّة ودوليَّة.",
+    "ShippingDescription4": "خدمات شحن ولوجستيات مخصَّصة لجميع أنواع المنتجات.",
+    "ShippingDescription5": "شحن دولي ومحلي يغطي جميع المدن والقرى, والأماكن البعيدة."
+  },
+  "HowWeWork": {
+    "HowWeWorkStep1Title": "الربط مع المتاجر الإلكترونية",
+    "HowWeWorkStep2Title": "التسوق بالعمولة",
+    "HowWeWorkStep3Title": "التوريد/ التخليص الجمركي",
+    "HowWeWorkStep4Title": "الاستيراد/التخليص الجمركي",
+    "HowWeWorkStep5Title": "الشحن ومراكز الاتصال",
+    "HowWeWorkStep6Title": "تحصيل الكاشات",
+    "HowWeWorkStep7Title": "المحافظ الرقمية",
+    "HowWeWorkStep8Title": "الربط مع المتاجر الإلكترونية"
   }
 }

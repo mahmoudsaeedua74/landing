@@ -21,7 +21,6 @@ export default function StepItem({
 }: StepItemProps) {
   return (
     <div className="flex flex-col items-center relative">
-      {/* Step number */}
       <motion.div
         className={`w-24 h-10 flex items-center justify-center text-white font-bold rounded-md z-10`}
         style={{ backgroundColor: color }}
@@ -37,8 +36,6 @@ export default function StepItem({
       {!isLast && (
         <div className="w-full h-1 bg-gray-200 absolute top-5 left-1/2 z-0" />
       )}
-
-      {/* Icon */}
       <motion.div
         className={`w-10 h-10 rounded-full flex items-center justify-center mt-8 text-white`}
         style={{ backgroundColor: color }}
@@ -50,7 +47,6 @@ export default function StepItem({
         {icon}
       </motion.div>
 
-      {/* Title */}
       <motion.h3
         className="text-main-color text-lg font-bold mt-4 text-center"
         initial={{ opacity: 0 }}
@@ -61,7 +57,6 @@ export default function StepItem({
         {title}
       </motion.h3>
 
-      {/* Subtitle */}
       <motion.p
         className="text-gray-600 text-sm mt-2 text-center max-w-[120px]"
         initial={{ opacity: 0 }}

@@ -8,7 +8,7 @@ import computer from "../../../public/assets/computer_6343916.png";
 import console from "../../../public/assets/console_1737328.png";
 import cosmetics from "../../../public/assets/cosmetics_3163173.png";
 import dress from "../../../public/assets/dress_4508274.png";
-
+import { useTranslations } from "next-intl";
 const containerAnimation = {
   initial: { opacity: 0 },
   whileInView: { opacity: 1 },
@@ -31,42 +31,43 @@ const experienceItems = [
   {
     icon: dress,
     id: 1,
-    title: "عمليات و أزياء",
+    title: "FashionAndOperations",
     color: "main" as const,
   },
   {
     icon: console,
     id: 2,
-    title: "المنتجات الرقمية",
+    title: "DigitalProducts",
     color: "second" as const,
   },
   {
     icon: cosmetics,
     id: 3,
-    title: "صحة و اللياقة",
+    title: "HealthAndFitness",
     color: "main" as const,
   },
   {
     icon: computer,
     id: 4,
-    title: "الالكترونيات",
+    title: "Electronics",
     color: "second" as const,
   },
 
   {
     icon: care,
     id: 5,
-    title: "العناية و الجمال",
+    title: "CareAndBeauty",
     color: "main" as const,
   },
 ];
 export default function OurExperience() {
+  const t = useTranslations("Categories");
   return (
-    <section className="py-16 container mx-auto">
-      <Heading title="انطلق بتجارتك مهما كان قطاعك" icon="dot" />
+    <section className="contain space-between">
+      <Heading title="OurExperience" icon="dot" />
 
       <motion.div
-        className="mt-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8"
+        className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-8"
         {...containerAnimation}
       >
         {experienceItems.map((item) => (
@@ -80,7 +81,7 @@ export default function OurExperience() {
           >
             <ExperienceItem
               icon={item.icon}
-              title={item.title}
+              title={t(item.title)}
               color={item.color}
             />
           </motion.div>

@@ -53,7 +53,7 @@ const testimonials = [
 export default function Testimonial() {
   return (
     <section className="py-20 px-4 overflow-hidden">
-      <Heading title="كيف تعمل Clickshare" icon="fa" />
+      <Heading title="Testimonial" icon="fa" />
       <Swiper
         spaceBetween={40}
         slidesPerView={1}
@@ -63,11 +63,11 @@ export default function Testimonial() {
             spaceBetween: 60,
           },
           768: {
-            slidesPerView: 3,
-            spaceBetween: 70,
+            slidesPerView: 2,
+            spaceBetween: 60,
           },
           1124: {
-            slidesPerView: 4,
+            slidesPerView: 3,
             spaceBetween: 80,
           },
         }}

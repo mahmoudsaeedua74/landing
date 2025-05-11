@@ -15,10 +15,11 @@ const buttonVariants = cva(
       },
       size: {
         default: "h-9 px-4 py-2",
-        sm: " rounded-full px-8 text-[20px]",
-        lg: "h-10 rounded-full px-8 text-[23px]", //need
-        xl: "px-14 py-2 text-[23px] rounded-full font-bold", //need
-        second:"lg:px-20 md:px-16 px-6 lg:text-[30px] text-[20px]  lg:text-[40px] rounded-full font-semibold ",
+        sm: " rounded-full px-12 text-[20px]",
+        lg: "h-10 rounded-full px-7 text-[20px] 2xl:px-8 2xl:text-[23px]", //need
+        xl: "md:px-14 md:py-2 sm:px-10 sm:py-1  px-5 text-[16px] md:text-[23px] sm:text-[20px] rounded-full font-bold", //need
+        second:
+          "lg:px-20 md:px-16 px-6 lg:text-[30px] text-[20px]  lg:text-[40px] rounded-full font-semibold ",
         icon: "h-9 w-9",
       },
     },
