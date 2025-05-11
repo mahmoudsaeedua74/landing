@@ -33,7 +33,7 @@ export default function FAQ() {
       <div className="container mx-auto px-4">
         <Heading title="FAQ" icon="mark" />
         <div className="flex flex-col lg:flex-row mt-12 gap-8">
-          <div className=" w-full lg:w-1/2 my-10 bg-gray-50 px-8 py-2  rounded-3xl flex flex-col  gap-y-4 justify-center  border">
+          <div className=" w-full lg:w-1/2 ">
             <FAQContact />
           </div>
           <div className="w-full lg:w-1/2">

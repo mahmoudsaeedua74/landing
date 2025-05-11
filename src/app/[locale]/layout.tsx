@@ -28,7 +28,7 @@ export default async function LocaleLayout({
   if (!messages) {
     notFound();
   }
-  const direction = locale === "en" || locale === "he" ? "ltr" : "rtl";
+  const direction = locale === "en" || locale === "en" ? "ltr" : "rtl";
 
   return (
     <html lang={locale} dir={direction}>

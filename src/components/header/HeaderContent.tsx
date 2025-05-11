@@ -32,8 +32,8 @@ export default function HeaderContent() {
             className="
               text-2xl  sm:text-[1.975rem] md:text-[2.975rem]  lg:text-[2.7rem] leading-normal  xl:text-[3.2rem]  2xl:text-[4.375rem] font-medium "
           >
-            <span className="font-bold">{t("titleLine2")}</span>{" "}
-            {t("titleLine1")}
+            <span className="font-bold">{t("titleLine1")}</span>{" "}
+           
           </h1>
           <h2
             className="mt-2 mb-3  md:mb-8 md:mt-4 
