@@ -8,11 +8,30 @@ interface FAQItem {
   answer: string;
   id: number;
 }
+const faqItems: FAQItem[] = [
+  {
+    id: 1,
+    question: "FAQQuestion1",
+    answer: "FAQAnswer1",
+  },
+  {
+    id: 2,
+    question: "FAQQuestion2",
+    answer: "FAQAnswer2",
+  },
+  {
+    id: 3,
+    question: "FAQQuestion3",
+    answer: "FAQAnswer3",
+  },
+  {
+    id: 4,
+    question: "FAQQuestion4",
+    answer: "FAQAnswer4",
+  },
+];
 
-interface FAQListProps {
-  faqItems: FAQItem[];
-}
-export default function FAQList({ faqItems }: FAQListProps) {
+export default function FAQList() {
   return (
     <div className="space-y-2">
       {faqItems.map((item, index) => (

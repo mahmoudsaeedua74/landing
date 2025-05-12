@@ -7,22 +7,20 @@ const stats = [
   {
     id: 1,
     number: 20,
-    title: "عميل راضٍ",
-    description: "هدفنا الرئيسي هو توفير أفضل جودة للخدمات لعملائنا.",
+    title: "ResultNumberTitle1",
+    description: "ResultNumberDescription1",
   },
-
   {
     id: 2,
     number: 10,
-    title: "طلب يوميًا",
-    description: "نمتلك قدرة توصيل كبيرة في أقصر وقت ممكن.",
+    title: "ResultNumberTitle2",
+    description: "ResultNumberDescription2",
   },
   {
     id: 3,
     number: 17,
-    title: "مستودع",
-    description:
-      "نقوم بتخزين البضائع المستوردة داخل مستودعاتنا مع قدومها حتى الوصول إلى وجهتها الأخيرة",
+    title: "ResultNumberTitle3",
+    description: "ResultNumberDescription3",
   },
 ];
 export default function ResultNumber() {

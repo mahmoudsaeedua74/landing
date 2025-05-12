@@ -84,5 +84,56 @@
     "HowWeWorkStep6Title": "تحصيل الكاشات",
     "HowWeWorkStep7Title": "المحافظ الرقمية",
     "HowWeWorkStep8Title": "الربط مع المتاجر الإلكترونية"
+  },
+  "OurResults": {
+    "OurResultsSubtitle": "قيادة متجرك الإلكتروني بنجاح من خلال الأرقام القوية",
+    "OurResultsDescription1": "نجاح أي متجر إلكتروني لا يعتمد فقط على المنتجات.",
+    "OurResultsDescription2": "أو التصميم، بل فهم الأرقام وتحليلها بذكاء،",
+    "OurResultsDescription3": "من خلال تتبع الأداء واكتشاف نقاط القوة والضعف",
+    "OurResultsDescription4": "تقدر تطور استراتيجيتك، تحسن تجربة العميل",
+    "OurResultsDescription5": "وتحقق نمو فعّال ومستمر"
+  },
+  "ResultNumber": {
+    "ResultNumberTitle1": "عميل راضٍ",
+    "ResultNumberDescription1": "هدفنا الرئيسي هو توفير أفضل جودة للخدمات لعملائنا.",
+    "ResultNumberTitle2": "طلب يوميًا",
+    "ResultNumberDescription2": "نمتلك قدرة توصيل كبيرة في أقصر وقت ممكن.",
+    "ResultNumberTitle3": "مستودع",
+    "ResultNumberDescription3": "نقوم بتخزين البضائع المستوردة داخل مستودعاتنا مع قدومها حتى الوصول إلى وجهتها الأخيرة"
+  },
+  "FAQ": {
+    "FAQQuestion1": "ما هي التكاليف المتعلقة للخدمة؟",
+    "FAQAnswer1": "ما هي التكاليف المتعلقة للخدمة؟",
+
+    "FAQQuestion2": "ما هو مصدر المنتجات؟",
+    "FAQAnswer2": "ما هي التكاليف المتعلقة للخدمة؟",
+
+    "FAQQuestion3": "هل خدمة الاستضافة مجانية؟",
+    "FAQAnswer3": "ما هي التكاليف المتعلقة للخدمة؟",
+
+    "FAQQuestion4": "هل يتم الحصول علي فيزا credit من خلالنا؟",
+    "FAQAnswer4": "ما هي التكاليف المتعلقة للخدمة؟",
+    "FAQContactTitle": "لم تحصل على إجابة استفسارك بعد؟",
+    "FAQContactDescription": "راسلنا الآن و سيتم الإجابة عن جميع أسئلتك",
+    "FAQContactButton": "تواصل معنا!"
+  },
+  "Footer": {
+    "StartContactTitle": "هل انت جاهز للبدء؟",
+    "StartContactDescription": "تواصل الآن مع ممثل خدمة العملاء لدينا للحصول على مزيد من التفاصيل. اطلب مزيدًا من المعلومات حول خدماتنا لتلبية احتياجات عملك.",
+    "StartContactButton": "ابدأ الآن",
+    "FooterDescription": "هي شركــــة سعوديـــــة متخصصـــة فــي الدروبشيبينج وخدمات التجــارة الإلكترونيــة. تقدم حلولاً متكاملة مثل تصميــم المتاجــر، إدارة الإعلانات، وخدمة العملاء، بهدف تمكين رواد الأعمال من بناء مشاريع ناجحة بسهولة واحترافيــــة.",
+    "FooterFollowUs": "تابعنا على:",
+    "FooterLink1": "الرئيسية",
+    "FooterLink2": "عن كليك شير",
+    "FooterLink3": "كيف تعمل",
+    "FooterLink4": "تواصل معنا",
+    "FooterLink5": "الوظائف",
+    "FooterLink6": "الأسئلة المتكررة",
+    "FooterLink7": "الشروط والأحكام",
+    "FooterLink8": "سياسة الخصوصية",
+    "FooterLink9": "مركز المساعدة",
+    "FooterRights": "جميع الحقوق محفوظة لشركة كليك شير © 2025",
+    "FooterLocation": "الرياض، المملكة العربية السعودية",
+    "FooterEmail": "info@clickshare.store"
   }
 }

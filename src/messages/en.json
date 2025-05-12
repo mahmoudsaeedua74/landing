@@ -82,5 +82,56 @@
     "HowWeWorkStep6Title": "Cash Collection",
     "HowWeWorkStep7Title": "Digital Wallets",
     "HowWeWorkStep8Title": "Integration with Online Stores"
+  },
+  "OurResults": {
+    "OurResultsSubtitle": "Successfully leading your online store through strong data",
+    "OurResultsDescription1": "The success of any online store is not only about products.",
+    "OurResultsDescription2": "Or design, but about smartly understanding and analyzing data.",
+    "OurResultsDescription3": "By tracking performance and identifying strengths and weaknesses,",
+    "OurResultsDescription4": "You can develop your strategy, enhance the customer experience,",
+    "OurResultsDescription5": "And achieve effective and continuous growth."
+  },
+  "ResultNumber": {
+    "ResultNumberTitle1": "Satisfied Clients",
+    "ResultNumberDescription1": "Our main goal is to provide the best service quality to our clients.",
+    "ResultNumberTitle2": "Daily Orders",
+    "ResultNumberDescription2": "We have a large delivery capacity in the shortest possible time.",
+    "ResultNumberTitle3": "Warehouses",
+    "ResultNumberDescription3": "We store imported goods in our warehouses from arrival to their final destination."
+  },
+  "FAQ": {
+    "FAQQuestion1": "What are the service-related costs?",
+    "FAQAnswer1": "What are the service-related costs?",
+
+    "FAQQuestion2": "What is the source of the products?",
+    "FAQAnswer2": "What are the service-related costs?",
+
+    "FAQQuestion3": "Is the hosting service free?",
+    "FAQAnswer3": "What are the service-related costs?",
+
+    "FAQQuestion4": "Can I get a credit visa through you?",
+    "FAQAnswer4": "What are the service-related costs?",
+    "FAQContactTitle": "Didn't find the answer to your question?",
+    "FAQContactDescription": "Contact us now and we will answer all your questions.",
+    "FAQContactButton": "Contact us!"
+  },
+  "Footer": {
+    "StartContactTitle": "Are you ready to get started?",
+    "StartContactDescription": "Contact our customer service representative now for more details. Request more information about our services to meet your business needs.",
+    "StartContactButton": "Get Started No",
+    "FooterDescription": "It is a Saudi company specialized in dropshipping and e-commerce services. It provides comprehensive solutions such as store design, advertising management, and customer service, aiming to empower entrepreneurs to build successful projects easily and professionally.",
+    "FooterFollowUs": "Follow us on:",
+    "FooterLink1": "Home",
+    "FooterLink2": "About ClickShare",
+    "FooterLink3": "How it Works",
+    "FooterLink4": "Contact Us",
+    "FooterLink5": "Careers",
+    "FooterLink6": "FAQ",
+    "FooterLink7": "Terms and Conditions",
+    "FooterLink8": "Privacy Policy",
+    "FooterLink9": "Help Center",
+    "FooterRights": "All rights reserved for ClickShare © 2025",
+    "FooterLocation": "Riyadh, Saudi Arabia",
+    "FooterEmail": "info@clickshare.store"
   }
 }

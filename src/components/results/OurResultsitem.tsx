@@ -2,21 +2,22 @@ import Image from "next/image";
 import React from "react";
 import { motion } from "framer-motion";
 import map from "../../../public/assets/7. rev/man.png";
-import { useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 const item = {
   image: map,
   id: 0,
-  subtitle: "  قيادة متجرك الإلكتروني بنجاح من خلال الأرقام القوية",
+  subtitle: "OurResultsSubtitle",
   description: [
-    "نجاح أي متجر إلكتروني لا يعتمد فقط على المنتجات.",
-    "أو التصميم, بل فهم الأرقام وتحليلها بذكاء ,",
-    "من خلال تتبع الأداء واكتشاف نقاط القوة والضعف",
-    "تقدر تطور استراتيجيتك, تحسن تجربة العميل",
-    " وتحقق نمو فقال ومستمر",
+    "OurResultsDescription1",
+    "OurResultsDescription2",
+    "OurResultsDescription3",
+    "OurResultsDescription4",
+    "OurResultsDescription5",
   ],
 };
 export default function OurResults() {
   const locale = useLocale();
+  const t = useTranslations("OurResults");
   return (
     <div className="flex flex-col xl:flex-row overflow-hidden gap-8 items-center justify-center bg-white">
       <motion.div
@@ -43,11 +44,11 @@ export default function OurResults() {
       >
         <div className="sm:px-6 max-w-full">
           <h3 className="text-[clamp(1.5rem,4vw,4.1rem)]   font-bold mb-2 text-[#1e5a7e] ">
-            {item.subtitle}
+            {t(item.subtitle)}
           </h3>
           <div className=" text-[clamp(1.25rem,4vw,2.1rem)] text-[#1e5a7e]">
             {item.description.map((item) => (
-              <p key={item}> {item}</p>
+              <p key={item}> {t(item)}</p>
             ))}
           </div>
         </div>

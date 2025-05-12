@@ -7,28 +7,7 @@ import FAQContact from "./FAQContact";
 import { motion } from "framer-motion";
 import { useLocale } from "next-intl";
 
-const faqItems = [
-  {
-    question: "ما هي التكاليف المتعلقة للخدمة؟",
-    id: 1,
-    answer: "ما هي التكاليف المتعلقة للخدمة؟",
-  },
-  {
-    question: "ما هو مصدر المنتجات؟",
-    id: 2,
-    answer: "ما هي التكاليف المتعلقة للخدمة؟",
-  },
-  {
-    question: "هل خدمة الاستضافة مجانية؟",
-    id: 3,
-    answer: "ما هي التكاليف المتعلقة للخدمة؟",
-  },
-  {
-    question: "هل يتم الحصول علي فيزا credit من خلالنا؟",
-    id: 4,
-    answer: "ما هي التكاليف المتعلقة للخدمة؟",
-  },
-];
+
 
 export default function FAQ() {
   const locale = useLocale();
@@ -53,7 +32,7 @@ export default function FAQ() {
             viewport={{ once: false, amount: 0.3 }}
             transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
           >
-            <FAQList faqItems={faqItems} />
+            <FAQList  />
           </motion.div>
         </div>
       </div>

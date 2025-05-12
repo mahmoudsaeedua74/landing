@@ -1,5 +1,6 @@
 "use client";
 import { useInView } from "framer-motion";
+import { useTranslations } from "next-intl";
 import React, { useEffect, useRef, useState } from "react";
 interface StatItemProps {
   number: number;
@@ -14,6 +15,8 @@ export default function StatItem({
   const ref = useRef<HTMLDivElement | null>(null);
   const isInView = useInView(ref, { amount: 0.6 });
   const [count, setCount] = useState(0);
+  const t = useTranslations("ResultNumber");
+
   useEffect(() => {
     if (!isInView) return;
     let start = 0;
@@ -32,8 +35,8 @@ export default function StatItem({
       <p ref={ref} className="text-[3rem] md:text-[5.1875rem] font-bold">
         {count}k+
       </p>
-      <p className="text-[32px] md:text-[48px]">{title}</p>
-      <p className="text-[24px] md:text-[31px]">{description}</p>
+      <p className="text-[32px] md:text-[48px]">{t(title)}</p>
+      <p className="text-[24px] md:text-[31px]">{t(description)}</p>
     </div>
   );
 }
