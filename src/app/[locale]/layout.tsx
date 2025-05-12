@@ -33,7 +33,7 @@ export default async function LocaleLayout({
   return (
     <html lang={locale} dir={direction}>
       <body
-        className={`${cairo.variable} font-sans scroll-smooth antialiased overflow-x-hidden`}
+        className={`${cairo.variable} font-sans scroll-smooth antialiased `}
       >
         <NextIntlClientProvider messages={messages} locale={locale}>
           <Header />
