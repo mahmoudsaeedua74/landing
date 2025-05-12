@@ -99,6 +99,11 @@ export default function Footer() {
               <ul className="space-y-2">
                 <li>
                   <Link href="#" className="hover:text-gray-300">
+                    {t("FooterLink10")}
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#" className="hover:text-gray-300">
                     {t("FooterLink9")}
                   </Link>
                 </li>
