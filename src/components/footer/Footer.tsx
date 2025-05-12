@@ -115,7 +115,7 @@ export default function Footer() {
             <div>
               <p>{t("FooterRights")}</p>
             </div>
-            <div className="flex gap-10">
+            <div className=" flex flex-col md:flex-row  gap-10">
               <div className="flex items-center mb-4 md:mb-0">
                 <FaMapMarkerAlt className="me-2" size={40} />
                 <span>{t("FooterLocation")}</span>
