@@ -7,6 +7,7 @@ import { useTranslations } from "next-intl";
 import { HiMenu } from "react-icons/hi";
 import MobileSidebar from "./MobileSidebar";
 import Translations from "./Translations";
+import Link from "next/link";
 
 export default function Navbar() {
   const t = useTranslations("Header");
@@ -56,7 +57,7 @@ export default function Navbar() {
           </ul>
           <div className="flex  items-center">
             <Button variant="textMain" size="lg">
-              {t("signIn")}
+              <Link href={"https://v4.clickshare.store/register"} target="_blank">{t("signIn")}</Link>
             </Button>
             <Translations />
           </div>

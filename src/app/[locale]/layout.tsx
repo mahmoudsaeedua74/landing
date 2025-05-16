@@ -16,8 +16,9 @@ interface LocaleLayoutProps {
   params: Promise<{ locale: string }>;
 }
 export const metadata: Metadata = {
-  title: "App",
+  title: "ClickShare",
   description: "Description",
+  icons: "https://v4.clickshare.store/theme/images/favicon-32x32.png",
 };
 export default async function LocaleLayout({
   children,
