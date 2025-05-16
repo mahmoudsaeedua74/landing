@@ -4,18 +4,20 @@
 
 @layer components {
   .contain {
-    @apply mx-4 px-4 sm:px-0 sm:mx-[5.375rem] mx-auto 
+    @apply mx-4 px-4 sm:px-0 sm:mx-[5.375rem] mx-auto;
   }
   .space-between {
-    @apply my-10 md:my-28 sm:my-16 md:space-y-24 space-y-10 sm:space-y-20 
+    @apply my-10 md:my-28 sm:my-16 md:space-y-24 space-y-10 sm:space-y-20;
   }
-
 }
 header {
   background-image: url("../../public/assets/1.banner/bg.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: auto;
+}
+html {
+  scroll-behavior: smooth;
 }
 body {
   overflow-x: hidden;

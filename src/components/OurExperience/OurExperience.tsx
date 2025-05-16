@@ -63,7 +63,7 @@ const experienceItems = [
 export default function OurExperience() {
   const t = useTranslations("Categories");
   return (
-    <section className="contain space-between">
+    <section className="contain space-between"  > 
       <Heading title="OurExperience" icon="dot" />
 
       <motion.div

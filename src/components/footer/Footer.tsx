@@ -19,13 +19,16 @@ export default function Footer() {
 
   return (
     <>
-      <div className="contain overflow-hidden">
+      <div className="contain ">
         <Banner />
       </div>
-      <footer className="bg-[#787B7E] overflow-x-hidden  text-white pb-4 pt-12">
+      <footer
+        id="helpCenter"
+        className="bg-[#787B7E] overflow-x-hidden  text-white pb-4 pt-12"
+      >
         <div className="contain mt-14">
           <Image src={logo} alt="ClickShare Logo" width={280} height={60} />
-          <div className="lg:grid-cols-4 text-[25px] justify-items-center md:grid-cols-2 grid-cols-1 grid gap-8 mb-10 mt-8">
+          <div className="lg:grid-cols-4 text-[25px] md:justify-items-center md:grid-cols-2 grid-cols-1 grid gap-8 mb-10 mt-8">
             <div className="">
               <p className="mb-4">{t("FooterDescription")}</p>
               <p className="text-[32px] mb-2">{t("FooterFollowUs")}</p>

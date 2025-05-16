@@ -38,26 +38,42 @@ export default function Navbar() {
 
         <div className="hidden xl:flex xl:items-center xl:justify-between xl:flex-1 ">
           <ul className="flex text-[clamp(1.25rem,1.62vw,1.825rem)] lg:gap-3 2xl:gap-6 xl:gap-2  mx-auto ">
-            <li className="hover:text-opacity-80 cursor-pointer">
+            <a href={"#home"} className="hover:text-opacity-80 cursor-pointer">
               {t("home")}
-            </li>
-            <li className="hover:text-opacity-80 cursor-pointer">
+            </a>
+            <a
+              href={"#services"}
+              className="hover:text-opacity-80 cursor-pointer"
+            >
               {t("services")}
-            </li>
-            <li className="hover:text-opacity-80 cursor-pointer">
+            </a>
+            <a
+              href={"#howItWorks"}
+              className="hover:text-opacity-80 cursor-pointer"
+            >
               {t("howItWorks")}
-            </li>
-            <li className="hover:text-opacity-80 cursor-pointer">
+            </a>
+            <a href={"#blog"} className="hover:text-opacity-80 cursor-pointer">
               {t("blog")}
-            </li>
-            <li className="hover:text-opacity-80 cursor-pointer">{t("faq")}</li>
-            <li className="hover:text-opacity-80 cursor-pointer">
+            </a>
+            <a href={"#faq"} className="hover:text-opacity-80 cursor-pointer">
+              {t("faq")}
+            </a>
+            <a
+              href={"#helpCenter"}
+              className="hover:text-opacity-80 cursor-pointer"
+            >
               {t("helpCenter")}
-            </li>
+            </a>
           </ul>
           <div className="flex  items-center">
             <Button variant="textMain" size="lg">
-              <Link href={"https://v4.clickshare.store/register"} target="_blank">{t("signIn")}</Link>
+              <Link
+                href={"https://v4.clickshare.store/register"}
+                target="_blank"
+              >
+                {t("signIn")}
+              </Link>
             </Button>
             <Translations />
           </div>

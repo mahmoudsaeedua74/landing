@@ -12,7 +12,7 @@ import { useLocale } from "next-intl";
 export default function FAQ() {
   const locale = useLocale();
   return (
-    <section className="py-16 bg-white">
+    <section className="py-16 bg-white" id="faq">
       <div className="container mx-auto px-4">
         <Heading title="FAQ" icon="mark" />
         <div className="flex flex-col lg:flex-row mt-12 gap-8">
