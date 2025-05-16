@@ -60,11 +60,7 @@ export default function StepItem() {
     <div className=" relative flex gap-6 py-20 flex-wrap justify-around">
       {stepsData.map((item) => (
         <motion.div
-          className={`flex flex-col items-center relative ${
-            item.position === "top"
-              ? "mb-32 sm:mb-56 "
-              : " mt-32 sm:mb-56 sm:mt-0"
-          }`}
+          className={`flex flex-col items-center relative mb-56 `}
           key={item.step}
           {...animation}
           custom={item.step}
