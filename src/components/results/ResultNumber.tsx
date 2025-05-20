@@ -2,7 +2,9 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { animation } from "@/utils/animation";
-import StatItem from "./StatItem";
+import dynamic from "next/dynamic";
+const StatItem = dynamic(() => import("./StatItem"));
+
 const stats = [
   {
     id: 1,

@@ -1,11 +1,13 @@
 import React from "react";
-import Heading from "../common/Heading";
 import map from "../../../public/assets/4. ما يميزنا/1.png";
 import one from "../../../public/assets/4. ما يميزنا/2.png";
 import two from "../../../public/assets/4. ما يميزنا/map.png";
 import forth from "../../../public/assets/4. ما يميزنا/صورة 3.png";
-import WhyChooseUsItem from "./WhyChooseUsItem";
+const Heading = dynamic(() => import("../common/Heading"));
+const WhyChooseUsItem = dynamic(() => import("./WhyChooseUsItem"));
+
 import { useTranslations } from "next-intl";
+import dynamic from "next/dynamic";
 const items = [
   {
     image: map,

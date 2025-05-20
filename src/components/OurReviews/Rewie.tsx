@@ -1,12 +1,12 @@
 import React from "react";
-import Heading from "../common/Heading";
 import forth from "../../../public/assets/4. ما يميزنا/صورة 3.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import dynamic from "next/dynamic";
 import { TestimonialCard } from "./TestimonialCard";
-
+const Heading = dynamic(() => import("../common/Heading"));
 const testimonials = [
   {
     id: 1,

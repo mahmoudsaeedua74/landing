@@ -1,8 +1,7 @@
 "use client";
 
 import React from "react";
-import FAQItem from "./FAQItem";
-
+import dynamic from "next/dynamic";
 interface FAQItem {
   question: string;
   answer: string;
@@ -30,7 +29,7 @@ const faqItems: FAQItem[] = [
     answer: "FAQAnswer4",
   },
 ];
-
+const FAQItem = dynamic(() => import("./FAQItem"));
 export default function FAQList() {
   return (
     <div className="space-y-2">

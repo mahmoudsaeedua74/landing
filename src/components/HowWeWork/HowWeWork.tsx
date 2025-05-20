@@ -1,7 +1,8 @@
 "use client";
 import React from "react";
-import Heading from "../common/Heading";
-import StepItem from "./StepItem";
+import dynamic from "next/dynamic";
+const Heading = dynamic(() => import("../common/Heading"));
+const StepItem = dynamic(() => import("./StepItem"));
 export default function HowWeWork() {
   return (
     <section

@@ -6,7 +6,8 @@ import { motion } from "framer-motion";
 import { X } from "lucide-react";
 import Image from "next/image";
 import logo from "../../../public/images/colored.png";
-import Translations from "./Translations";
+import dynamic from "next/dynamic";
+  const Translations = dynamic(() => import("./Translations"));
 
 export default function MobileSidebar({
   isMenuOpen,

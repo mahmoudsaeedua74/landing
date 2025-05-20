@@ -14,7 +14,7 @@ header {
   background-image: url("../../public/assets/1.banner/bg.png");
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: cover;
 }
 html {
   scroll-behavior: smooth;

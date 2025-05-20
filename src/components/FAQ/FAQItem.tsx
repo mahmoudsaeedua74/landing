@@ -4,7 +4,6 @@ import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FaPlus, FaMinus } from "react-icons/fa";
 import { useTranslations } from "next-intl";
-
 interface FAQItemProps {
   question: string;
   answer?: string;
@@ -12,7 +11,6 @@ interface FAQItemProps {
   totalItems: number;
   index: number;
 }
-
 export default function FAQItem({
   id,
   question,

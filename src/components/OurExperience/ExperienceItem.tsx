@@ -6,9 +6,6 @@ interface ExperienceItemProps {
   title: string;
   color: "main" | "second";
 }
-
-
-
 export default function ExperienceItem({
   icon,
   title,

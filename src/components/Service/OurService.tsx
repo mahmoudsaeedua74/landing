@@ -1,6 +1,7 @@
 import React from "react";
-import Heading from "../common/Heading";
-import CarouselImage from "./CarouselImage";
+import dynamic from "next/dynamic";
+const Heading = dynamic(() => import("../common/Heading"));
+const CarouselImage = dynamic(() => import("./CarouselImage"));
 
 export default function OurService() {
   return (

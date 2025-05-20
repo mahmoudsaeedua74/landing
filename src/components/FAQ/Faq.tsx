@@ -1,14 +1,11 @@
 "use client";
-
 import React from "react";
-import Heading from "../common/Heading";
-import FAQList from "./FAQList";
-import FAQContact from "./FAQContact";
 import { motion } from "framer-motion";
 import { useLocale } from "next-intl";
-
-
-
+import dynamic from "next/dynamic";
+const Heading = dynamic(() => import("../common/Heading"));
+const FAQList = dynamic(() => import("./FAQList"));
+const FAQContact = dynamic(() => import("./FAQContact"));
 export default function FAQ() {
   const locale = useLocale();
   return (
@@ -32,7 +29,7 @@ export default function FAQ() {
             viewport={{ once: false, amount: 0.3 }}
             transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
           >
-            <FAQList  />
+            <FAQList />
           </motion.div>
         </div>
       </div>

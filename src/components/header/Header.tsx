@@ -1,6 +1,8 @@
 import React from "react";
-import Navbar from "./Navbar";
-import HeaderContent from "./HeaderContent";
+import dynamic from "next/dynamic";
+  const Navbar = dynamic(() => import("./Navbar"));
+  const HeaderContent = dynamic(() => import("./HeaderContent"));
+
 
 export default function Header() {
   return (

@@ -1,12 +1,14 @@
 "use client";
-
-import ChoseUs from "@/components/ChoseUs/ChoseUs";
-import FAQ from "@/components/FAQ/Faq";
-import HowWeWork from "@/components/HowWeWork/HowWeWork";
-import OurExperience from "@/components/OurExperience/OurExperience";
-import Testimonial from "@/components/OurReviews/Rewie";
-import OurResults from "@/components/results/OurResults";
-import OurService from "@/components/Service/OurService";
+import dynamic from "next/dynamic";
+const ChoseUs = dynamic(() => import("@/components/ChoseUs/ChoseUs"));
+const OurService = dynamic(() => import("@/components/Service/OurService"));
+const FAQ = dynamic(() => import("@/components/FAQ/Faq"));
+const HowWeWork = dynamic(() => import("@/components/HowWeWork/HowWeWork"));
+const OurExperience = dynamic(
+  () => import("@/components/OurExperience/OurExperience")
+);
+const Testimonial = dynamic(() => import("@/components/OurReviews/Rewie"));
+const OurResults = dynamic(() => import("@/components/results/OurResults"));
 
 export default function Home() {
   return (

@@ -4,8 +4,7 @@ import { notFound } from "next/navigation";
 import { Metadata } from "next";
 import { Cairo } from "next/font/google";
 import "../global.css";
-import Header from "@/components/header/Header";
-import Footer from "@/components/footer/Footer";
+import dynamic from "next/dynamic";
 const cairo = Cairo({
   variable: "--font-cairo",
   subsets: ["arabic"],
@@ -30,7 +29,8 @@ export default async function LocaleLayout({
     notFound();
   }
   const direction = locale === "en" || locale === "en" ? "ltr" : "rtl";
-
+  const Footer = dynamic(() => import("@/components/footer/Footer"));
+  const Header = dynamic(() => import("@/components/header/Header"));
   return (
     <html lang={locale} dir={direction}>
       <body

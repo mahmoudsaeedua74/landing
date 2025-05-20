@@ -1,6 +1,7 @@
 import React from "react";
-import OurResultsitem from "./OurResultsitem";
-import ResultNumber from "./ResultNumber";
+import dynamic from "next/dynamic";
+const OurResultsitem = dynamic(() => import("./OurResultsitem"));
+const ResultNumber = dynamic(() => import("./ResultNumber"));
 
 export default function OurResults() {
   return (

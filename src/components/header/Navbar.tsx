@@ -5,9 +5,10 @@ import Image from "next/image";
 import { Button } from "../ui/Button/Button";
 import { useTranslations } from "next-intl";
 import { HiMenu } from "react-icons/hi";
-import MobileSidebar from "./MobileSidebar";
-import Translations from "./Translations";
 import Link from "next/link";
+import dynamic from "next/dynamic";
+const MobileSidebar = dynamic(() => import("./MobileSidebar"));
+const Translations = dynamic(() => import("./Translations"));
 
 export default function Navbar() {
   const t = useTranslations("Header");

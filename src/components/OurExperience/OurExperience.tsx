@@ -1,7 +1,5 @@
 "use client";
 import React from "react";
-import Heading from "../common/Heading";
-import ExperienceItem from "./ExperienceItem";
 import { motion } from "framer-motion";
 import care from "../../../public/assets/care_7273461.png";
 import computer from "../../../public/assets/computer_6343916.png";
@@ -9,6 +7,9 @@ import console from "../../../public/assets/console_1737328.png";
 import cosmetics from "../../../public/assets/cosmetics_3163173.png";
 import dress from "../../../public/assets/dress_4508274.png";
 import { useTranslations } from "next-intl";
+import dynamic from "next/dynamic";
+const Heading = dynamic(() => import("../common/Heading"));
+const ExperienceItem = dynamic(() => import("./ExperienceItem"));
 const containerAnimation = {
   initial: { opacity: 0 },
   whileInView: { opacity: 1 },
